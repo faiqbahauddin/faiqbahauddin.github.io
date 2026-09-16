@@ -2,11 +2,11 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://astro-paper.pages.dev/",
+    url: "https://faiqbahaunddin.github.io/",
     title: "AstroPaper",
-    description: "A minimal, responsive and SEO-friendly Astro blog theme.",
-    author: "Sat Naing",
-    profile: "https://satna.ing",
+    description: "Making Economic News Easy to Understand.",
+    author: "Mochammad Faiq Bahauddin",
+    profile: "",
     ogImage: "default-og.jpg",
     lang: "en",
     timezone: "Asia/Bangkok",
