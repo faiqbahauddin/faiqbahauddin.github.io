@@ -1,37 +1,52 @@
 ---
-title: "About"
-description: "A bit about me and this blog."
+title: "About Neraca"
+description: "Learn more about Neraca and its mission to make economics, finance, business, and financial literacy easier to understand."
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+# About Neraca
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+**Neraca** is a platform dedicated to making economics, finance, business, and financial literacy easier to understand.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+We believe that financial and economic information should not be complicated or limited to experts. Neraca presents complex topics in a clear, accessible, and practical way so that they can be understood by students, young professionals, business owners, and anyone interested in understanding how the economy and financial world work.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## What We Cover
 
-## Features
+Neraca publishes articles and insights covering topics such as:
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+- Economics and economic trends
+- Personal finance and financial literacy
+- Investment and financial markets
+- Business and entrepreneurship
+- Banking and digital finance
+- Financial technology
+- Economic data and statistics
+- Practical financial insights
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+Our goal is not simply to provide information, but to help readers understand the ideas behind the numbers, policies, trends, and financial decisions that affect everyday life.
 
-and so much more.
+## Our Approach
 
-## Show your support
+We aim to present information in a simple and structured way without losing the important context behind each topic.
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+Articles on Neraca are designed to answer three basic questions:
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+**What is happening?**  
+Understanding the facts, data, and developments behind an economic or financial topic.
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+**Why does it matter?**  
+Explaining the factors that influence the situation and its potential implications.
 
-Kyay zuu! 🙏🏼
+**What can we learn from it?**  
+Turning complex information into practical insights that readers can use to better understand the world around them.
+
+## About the Author
+
+Neraca is created and managed by **Mochammad Faiq Bahauddin**, with an interest in economics, finance, business, and financial literacy.
+
+Through Neraca, the goal is to make economic and financial knowledge more accessible to a wider audience — one article at a time.
+
+## Stay Connected
+
+For updates and new articles, you can connect with Neraca through the social links available on this website.
+
+**Making economic news easy to understand.**
