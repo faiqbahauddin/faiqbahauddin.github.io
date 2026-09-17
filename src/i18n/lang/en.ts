@@ -2,70 +2,80 @@ import type { UIStrings } from "../types";
 
 export default {
   nav: {
-    home: "Home",
-    posts: "Posts",
-    tags: "Tags",
-    about: "About",
-    archives: "Archives",
-    search: "Search",
+    home: "Beranda",
+    posts: "Artikel",
+    tags: "Topik",
+    about: "Tentang",
+    archives: "Arsip",
+    search: "Cari",
   },
+
   post: {
-    publishedAt: "Published at",
-    updatedAt: "Updated",
-    sharePostIntro: "Share this post:",
-    sharePostOn: "Share this post on {{platform}}",
-    sharePostViaEmail: "Share this post via email",
-    tagLabel: "Tags",
-    backToTop: "Back to top",
-    goBack: "Go back",
-    editPage: "Edit page",
-    previousPost: "Previous Post",
-    nextPost: "Next Post",
+    publishedAt: "Dipublikasikan",
+    updatedAt: "Diperbarui",
+    sharePostIntro: "Bagikan artikel ini:",
+    sharePostOn: "Bagikan artikel ini di {{platform}}",
+    sharePostViaEmail: "Bagikan artikel ini melalui email",
+    tagLabel: "Topik",
+    backToTop: "Kembali ke atas",
+    goBack: "Kembali",
+    editPage: "Edit halaman",
+    previousPost: "Artikel Sebelumnya",
+    nextPost: "Artikel Berikutnya",
   },
+
   pagination: {
-    prev: "Prev",
-    next: "Next",
-    page: "Page",
+    prev: "Sebelumnya",
+    next: "Berikutnya",
+    page: "Halaman",
   },
+
   home: {
-    socialLinks: "Social Links",
-    featured: "Featured",
-    recentPosts: "Recent Posts",
-    allPosts: "All Posts",
+    socialLinks: "Media Sosial",
+    featured: "Artikel Pilihan",
+    recentPosts: "Artikel Terbaru",
+    allPosts: "Semua Artikel",
   },
+
   footer: {
-    copyright: "Copyright",
-    allRightsReserved: "All rights reserved.",
+    copyright: "Hak Cipta",
+    allRightsReserved: "Hak cipta dilindungi.",
   },
+
   pages: {
-    tagTitle: "Tag",
-    tagDesc: "All the articles with the tag",
+    tagTitle: "Topik",
+    tagDesc: "Artikel yang membahas topik",
 
-    tagsTitle: "Tags",
-    tagsDesc: "All the tags used in posts.",
+    tagsTitle: "Topik",
+    tagsDesc:
+      "Jelajahi artikel Neraca berdasarkan topik ekonomi, keuangan, bisnis, dan literasi finansial.",
 
-    postsTitle: "Posts",
-    postsDesc: "All the articles I've posted.",
+    postsTitle: "Artikel",
+    postsDesc:
+      "Baca artikel terbaru tentang ekonomi, keuangan, bisnis, dan literasi finansial dari Neraca.",
 
-    archivesTitle: "Archives",
-    archivesDesc: "All the articles I've archived.",
+    archivesTitle: "Arsip",
+    archivesDesc:
+      "Jelajahi seluruh artikel Neraca berdasarkan tahun dan bulan.",
 
-    searchTitle: "Search",
-    searchDesc: "Search any article ...",
+    searchTitle: "Cari",
+    searchDesc: "Cari artikel tentang ekonomi, keuangan, bisnis, dan literasi finansial.",
   },
+
   a11y: {
-    skipToContent: "Skip to content",
-    openMenu: "Open menu",
-    closeMenu: "Close menu",
-    toggleTheme: "Toggle theme",
-    searchPlaceholder: "Search posts...",
-    noResults: "No results found",
-    goToPreviousPage: "Go to previous page",
-    goToNextPage: "Go to next page",
+    skipToContent: "Lewati ke konten",
+    openMenu: "Buka menu",
+    closeMenu: "Tutup menu",
+    toggleTheme: "Ubah tema",
+    searchPlaceholder: "Cari artikel...",
+    noResults: "Artikel tidak ditemukan",
+    goToPreviousPage: "Ke halaman sebelumnya",
+    goToNextPage: "Ke halaman berikutnya",
   },
+
   notFound: {
-    title: "404 Not Found",
-    message: "Page Not Found",
-    goHome: "Go back home",
+    title: "404 - Halaman Tidak Ditemukan",
+    message: "Halaman tidak ditemukan",
+    goHome: "Kembali ke beranda",
   },
 } satisfies UIStrings;
