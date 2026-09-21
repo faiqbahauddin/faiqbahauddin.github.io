@@ -1,11 +1,17 @@
 ---
+import { getCollection } from "astro:content";
 import { getRelativeLocaleUrl } from "astro:i18n";
+
 import IconRss from "@/assets/icons/IconRss.svg";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Socials from "@/components/Socials.astro";
+import Datetime from "@/components/Datetime.astro";
+
 import { useTranslations } from "@/i18n";
+import { getPostUrl } from "@/utils/getPostPaths";
+import { getSortedPosts } from "@/utils/getSortedPosts";
 import config from "@/config";
 
 const { socials } = config;
@@ -13,6 +19,10 @@ const { socials } = config;
 const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
 const homePath = getRelativeLocaleUrl(locale, "");
+
+const posts = await getCollection("posts");
+const sortedPosts = getSortedPosts(posts);
+const latestPosts = sortedPosts.slice(0, 6);
 ---
 
 <Layout>
@@ -24,6 +34,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
     data-home-path={homePath}
     class="app-layout my-1"
   >
+    <!-- HERO -->
     <section id="hero" class="border-border border-b pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         Neraca
@@ -59,8 +70,68 @@ const homePath = getRelativeLocaleUrl(locale, "");
             <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">
               {t.home.socialLinks}:
             </div>
+
             <Socials />
           </div>
+        )
+      }
+    </section>
+
+    <!-- LATEST ARTICLES -->
+    <section class="pt-8 pb-12">
+      <div class="mb-6 flex items-center justify-between">
+        <h2 class="text-2xl font-bold sm:text-3xl">
+          Latest Articles
+        </h2>
+
+        <a
+          href={getRelativeLocaleUrl(locale, "archives")}
+          class="text-accent text-sm font-medium hover:underline"
+        >
+          View all →
+        </a>
+      </div>
+
+      {
+        latestPosts.length > 0 ? (
+          <div class="grid gap-6">
+            {latestPosts.map(post => (
+              <article
+                class="border-border hover:border-accent rounded-lg border p-5 transition-colors"
+              >
+                <a href={getPostUrl(post.id, post.filePath, locale)}>
+                  <h3 class="text-xl font-bold hover:underline">
+                    {post.data.title}
+                  </h3>
+                </a>
+
+                <div class="text-muted-foreground mt-2 text-sm">
+                  <Datetime
+                    pubDatetime={post.data.pubDatetime}
+                    modDatetime={post.data.modDatetime}
+                    timezone={post.data.timezone}
+                  />
+                </div>
+
+                <p class="text-muted-foreground mt-3">
+                  {post.data.description}
+                </p>
+
+                <div class="mt-4">
+                  <a
+                    href={getPostUrl(post.id, post.filePath, locale)}
+                    class="text-accent font-medium hover:underline"
+                  >
+                    Read article →
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <p class="text-muted-foreground">
+            No articles published yet.
+          </p>
         )
       }
     </section>
