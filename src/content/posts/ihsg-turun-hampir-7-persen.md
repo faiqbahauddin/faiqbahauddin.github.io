@@ -1,7 +1,7 @@
 ---
 title: "Kenapa IHSG Turun Belakangan Ini? Penjelasan Sederhana untuk Investor Pemula"
 description: "IHSG turun hampir 7% sepanjang September 2026. Apa saja penyebabnya, apakah ekonomi Indonesia sedang bermasalah, dan apa yang sebaiknya dilakukan investor pemula?"
-pubDatetime: 2026-10-03T20:00:00+07:00
+pubDatetime: 2026-10-03
 author: "Mochammad Faiq Bahauddin"
 featured: false
 draft: false
